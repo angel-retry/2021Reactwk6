@@ -16,15 +16,18 @@ function Product({ match }) {
 
    return (
       <Layout className="container main-layout">
-         <Layout className="bg-gray">
+         {/* <Layout className="bg-gray">
             <NavBar />
-         </Layout>
+         </Layout> */}
          <Layout className="bg-gray">     
             <Header className="layout-header">
                <AppHeader title="Product Detail" />
             </Header>
-            <Content className="layout-content">
-               <ProductDetail />
+            <Content className="layout-bigcontent">
+               <NavBar />
+               <Content className="layout-content">
+                  <ProductDetail />
+               </Content>
             </Content>
             <Footer className="layout-footer">
                <AppFooter />

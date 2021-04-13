@@ -16,7 +16,7 @@ let cartItems = localStorage.getItem("cartItems")
 
 const initialState = {
   page: {
-    title: "NORDIC NEST Shopping Cart",
+    // title: "NORDIC NEST Shopping Car",
     products,
   },
   navBar: {

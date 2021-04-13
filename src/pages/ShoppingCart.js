@@ -17,9 +17,9 @@ function ShoppingCart({ match }) {
 
    return (
       <Layout className="container main-layout">
-         <Layout className="bg-gray">
+         {/* <Layout className="bg-gray">
             <NavBar />
-         </Layout>
+         </Layout> */}
          <Layout className="bg-gray">     
             <Header className="layout-header">
                <AppHeader title="ShoppingCart" />
