@@ -1,5 +1,12 @@
 @import '~antd/dist/antd.css';
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kiwi Maru', serif;
+}
+
 /* RWD Container */
 .container {
     width: 100%;
@@ -299,13 +306,13 @@ body {
   margin-top: 1rem;
   cursor: pointer;
   color: #A34B00;
-  opacity: 0.6;
+  opacity: 1;
   transition: opacity .25s linear;
 }
 
 .headernav-item:hover {
   color: #A34B00;
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .headernav-item--active {
@@ -510,13 +517,46 @@ span.ham-menu-bar3--touch {
 .hr-footer-line {
   margin: 25px auto 30px;
   padding: 0;
-  width: 300px;
+  width: 80%;
   border: 0;
   border-top: solid 2px;
-  border-color: #3e3f97;
+  border-color: #A34B00;
   opacity: 1;
   border-radius: 0.2rem;
 }
+
+.copyright {
+  color:#CECECE;
+}
+
+/* Footer navbar */
+.footernav-bar {
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  transition: all 0.25s linear;
+}
+
+.footernav-item {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #7A7A7A;
+  opacity: 1;
+  transition: opacity .25s linear;
+}
+
+.footernav-item:hover {
+  color: #7A7A7A;
+  opacity: 0.6;
+}
+
+.footernav-item--active {
+  opacity: 1;
+}
+
 
 /* Detail Page */
 .product-image {
