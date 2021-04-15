@@ -16,16 +16,21 @@ function ShoppingCart({ match }) {
    }, [cartItems])
 
    return (
-      <Layout className="container main-layout">
+      <Layout className=" main-layout">
          {/* <Layout className="bg-gray">
             <NavBar />
          </Layout> */}
-         <Layout className="bg-gray">     
-            <Header className="layout-header">
-               <AppHeader title="ShoppingCart" />
-            </Header>
-            <Content className="layout-content">
-               <CartModal />
+         <Layout className="bg-white">  
+            <Layout className="bg-header">
+               <Header className="container layout-header">
+                  <AppHeader title="ShoppingCart" />
+               </Header>
+            </Layout>   
+            <Content className="container layout-bigcontent ">
+               <NavBar />
+               <Content className="layout-content">
+                  <CartModal/>
+               </Content>
             </Content>
             <Footer className="layout-footer">
                <AppFooter />

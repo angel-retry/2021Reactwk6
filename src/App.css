@@ -6,7 +6,7 @@
     display: flex;
     align-self: center;
     margin: auto;
-    background-color: #fff;
+    background-color: rgb(66, 30, 30);
 }
 
 /* sm */
@@ -57,6 +57,9 @@ body {
   max-width: 1200px;
   padding: 0 15px;
 }
+.bg-white{
+  background-color: #fff;
+}
 
 .layout-header,
 .layout-footer {
@@ -79,8 +82,10 @@ body {
   min-height: 100vh;
 }
 
-.bg-gray {
-  background-color: #fff;
+.bg-header {
+  background-color: #F8F8F8;
+  box-shadow: 0px 4px 4px rgba(117, 117, 117, 0.42);
+  margin-bottom: 2rem;
 }
 
 .text-gray {
@@ -93,7 +98,7 @@ body {
   /* text-align: center; */
   background: #F8F8F8;
   width: 100%;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .header-wrap {

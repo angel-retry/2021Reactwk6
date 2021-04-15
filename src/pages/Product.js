@@ -15,15 +15,17 @@ function Product({ match }) {
    useEffect(() => setProductDetail(dispatch, match.params.productId, 0),[])
 
    return (
-      <Layout className="container main-layout">
+      <Layout className=" main-layout">
          {/* <Layout className="bg-gray">
             <NavBar />
          </Layout> */}
-         <Layout className="bg-gray">     
-            <Header className="layout-header">
-               <AppHeader title="Product Detail" />
-            </Header>
-            <Content className="layout-bigcontent">
+         <Layout className="bg-white">  
+            <Layout className="bg-header">
+               <Header className="container layout-header">
+                  <AppHeader title="Product Detail" />
+               </Header>
+            </Layout>   
+            <Content className="container layout-bigcontent">
                <NavBar />
                <Content className="layout-content">
                   <ProductDetail />

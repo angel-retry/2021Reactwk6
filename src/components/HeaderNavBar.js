@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Drawer } from "antd";
 import HeaderNavItem from "./HeaderNavItem";
 import HamMenu from "./HamMenu";
+import { Link } from "react-router-dom";
+
+
 
 export default function HeaderNavBar() {
     const [isOnTouch, setIsOnTouch] = useState(false);
@@ -21,9 +24,9 @@ export default function HeaderNavBar() {
                 <HeaderNavItem to="/problem" className="headernav-item" activeClassName="nav-item--active">
                     常見Q&A
                 </HeaderNavItem>
-                <HeaderNavItem to="/Store" className="headernav-item" activeClassName="nav-item--active">
+                <Link to="StoreShop" className="headernav-item" >
                     商品一覽
-                </HeaderNavItem>
+                </Link>
                 <HeaderNavItem to="/contact" className="headernav-item" activeClassName="nav-item--active">
                     聯絡我們
                 </HeaderNavItem>

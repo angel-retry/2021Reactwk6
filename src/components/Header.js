@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../store";
 import CartSummary from "./CartSummary";
+import HeaderNavBar from "./HeaderNavBar";
 import { pageContentsSet, activeNavItemSet } from "../actions";
 import { getJSON } from "../api";
-import HeaderNavBar from "./HeaderNavBar";
+
 
 export default function Header({ title }) {
   const { dispatch } = useContext(StoreContext);
@@ -14,11 +15,11 @@ export default function Header({ title }) {
   };
 
   return (
-    <header className="header">
-      <div className="header-wrap">
+    <header className="header ">
+      <div className=" header-wrap">
         <div className="header-text" onClick={onClickHeader}>
           <Link to="/">
-            <img className="header-logo" src="https://scontent.ftpe12-2.fna.fbcdn.net/v/t1.6435-9/170511365_847361936128209_625601099276302411_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=_iNwXZP7RsMAX8lyfmU&_nc_ht=scontent.ftpe12-2.fna&oh=8e91f13464f254ae8e6beb251bfb1dfd&oe=609C142B"></img>
+            <img className="header-logo" src="https://upload.cc/i1/2021/04/15/HDIKAY.png"></img>
             {/* <h1 className="header-title">{title}</h1> */}
           </Link>
           {/* <p className="header-slogan">An example made by Create-React-App.</p> */}

@@ -11,15 +11,17 @@ const { Header, Content, Footer } = Layout;
 function Home() {
   const { state: { page: { title, products } } } = useContext(StoreContext);
   return (
-    <Layout className="container main-layout">
+    <Layout className="main-layout">
       {/* <Layout className="bg-gray">
         <NavBar />
       </Layout> */}
-      <Layout className="bg-gray">
-        <Header className="layout-header">
-          <AppHeader title={title} />
-        </Header>
-        <Content className="layout-bigcontent">
+      <Layout className="bg-white" >
+        <Layout className="bg-header">
+          <Header className="container layout-header">
+            <AppHeader className="container" title={title} />
+          </Header>
+        </Layout>
+        <Content className="container layout-bigcontent ">
           {/* <NavBar /> */}
           <Content className="layout-content">
             <ProductList products={products} />
